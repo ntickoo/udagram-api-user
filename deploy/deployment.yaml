@@ -37,12 +37,12 @@ spec:
               key: POSTGRES_DB
         - name: POSTGRES_USERNAME
           valueFrom:
-            configMapKeyRef:
+            secretKeyRef:
               name: env-secret
               key: POSTGRES_USERNAME
         - name: POSTGRES_PASSWORD
           valueFrom:
-            configMapKeyRef:
+            secretKeyRef:
               name: env-secret
               key: POSTGRES_PASSWORD
         - name: AWS_BUCKET
@@ -67,7 +67,7 @@ spec:
               key: URL
         - name: JWT_SECRET
           valueFrom:
-            configMapKeyRef:
+            secretKeyRef:
               name: env-secret
               key: JWT_SECRET
         volumeMounts:
