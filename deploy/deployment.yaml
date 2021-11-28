@@ -19,7 +19,7 @@ spec:
         image: tickoon/udagram-api-user:v1
         resources:
           requests:
-            memory: "64Mi"
+            memory: "256Mi"
             cpu: "250m"
           limits:
             memory: "2048Mi"
